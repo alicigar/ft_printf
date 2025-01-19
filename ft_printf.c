@@ -12,48 +12,26 @@
 
 #include "ft_printf.h"
 
-static int	ft_handle_conversion(char c, va_list args)
+static int	ft_format(va_list *args, char format)
 {
-	if (c == 'c')
-	{
-		ft_putchar(va_arg(args, int));
-		return (1);
-	}
-	else if (c == 's')
-	{
-		ft_putstr(va_arg(args, char *));
-		return (1);
-	}
-	else if (c == 'p')
-	{
-		ft_putnbr_ptr(va_arg(args, void *));
-		return (1);
-	}
-	else if (c == 'd' || c == 'i')
-	{
-		ft_putnbr(va_arg(args, int));
-		return (1);
-	}
-	else if (c == 'u')
-	{
-		ft_putnbr_unsigned(va_arg(args, unsigned int));
-		return (1);
-	}
-	else if (c == 'x')
-	{
-		ft_putnbr_hexa(va_arg(args, unsigned int), 0);
-		return (1);
-	}
-	else if (c == 'X')
-	{
-		ft_putnbr_hexa(va_arg(args, unsigned int), 1);
-		return (1);
-	}
-	else if (c == '%')
-	{
-		ft_put_percent();
-		return (1);
-	}
+	count = 0;
+	if (format == 'c')
+		count = ft_putchar(va_arg(*args, int));
+	else if (format == 's')
+		count = ft_putstr(va_arg(*args, char *));
+	else if (format == 'p')
+		count = ft_print_ptr (va_arg(*args, void *));
+	else if (format == 'd' || format == 'i')
+		count = ft_putnbr(va_arg(*args, int));
+	else if (format == 'u')
+		count = ft_print_unsigned(va_arg(*args, unsigned int));
+	else if (format == 'u')
+		count = ft_print_unsigned(va_arg(*args, int);
+	else if (format == 'x' || format == 'X')
+		count = ft_puthexa(va_arg(*args, unsigned int), format);
+	else if (format == '%')
+		count = ft_putchar('%');
+	return (count);
 }
 
 int	ft_printf(const char *format, ...)

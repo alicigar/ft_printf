@@ -1,13 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_prints.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/13 17:26:24 by alicigar          #+#    #+#             */
-/*   Updated: 2025/01/29 21:12:39 by alicigar         ###   ########.fr       */
+/*   Created: 2025/01/29 18:40:10 by alicigar          #+#    #+#             */
+/*   Updated: 2025/01/29 21:11:19 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_printf(char const *format, ...);
+#include "ft_printf.h"
+
+void	ft_prints(char *str)
+{
+	while (*str)
+	{
+		write(1, str, 1);
+		str++;
+	}
+}
+
+/*int	main()
+{
+    printf ("%s\n", " ");
+	ft_prints("");
+	return (0);
+}*/

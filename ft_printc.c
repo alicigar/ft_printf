@@ -1,13 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_printc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/13 17:26:24 by alicigar          #+#    #+#             */
-/*   Updated: 2025/01/29 21:12:39 by alicigar         ###   ########.fr       */
+/*   Created: 2025/01/29 18:46:01 by alicigar          #+#    #+#             */
+/*   Updated: 2025/01/29 21:04:03 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_printf(char const *format, ...);
+#include "ft_printf.h"
+
+void	ft_printc(char c)
+{
+	write (1, &c, 1);
+}
+
+/*int main()
+{
+    printf ("%c\n", 'C');
+	ft_printc('C');
+	return (0);
+}*/

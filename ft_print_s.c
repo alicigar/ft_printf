@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printc.c                                        :+:      :+:    :+:   */
+/*   ft_print_s.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/29 18:46:01 by alicigar          #+#    #+#             */
-/*   Updated: 2025/02/03 00:31:18 by alicigar         ###   ########.fr       */
+/*   Created: 2025/01/29 18:40:10 by alicigar          #+#    #+#             */
+/*   Updated: 2025/02/03 00:51:44 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printc(char c)
+int	ft_print_s(char *str)
 {
-	write (1, &c, 1);
-	return (1);
+	int	count;
+
+	count = 0;
+	if (!str)
+		return (write (1, "(null)", 6));
+	while (*str)
+	{
+		write(1, str, 1);
+		str++;
+		count++;
+	}
+	return (count);
 }
 
-/*int main()
+/*int	main()
 {
-    printf ("%c\n", 'C');
-	ft_printc('C');
+    printf ("%s\n", " ");
+	ft_prints("");
 	return (0);
 }*/

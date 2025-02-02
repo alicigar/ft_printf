@@ -6,15 +6,16 @@
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 18:46:01 by alicigar          #+#    #+#             */
-/*   Updated: 2025/01/29 21:04:03 by alicigar         ###   ########.fr       */
+/*   Updated: 2025/02/03 00:31:18 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_printc(char c)
+int	ft_printc(char c)
 {
 	write (1, &c, 1);
+	return (1);
 }
 
 /*int main()

@@ -6,7 +6,7 @@
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 17:26:17 by alicigar          #+#    #+#             */
-/*   Updated: 2025/01/29 21:12:22 by alicigar         ###   ########.fr       */
+/*   Updated: 2025/02/02 23:58:41 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 # include <stdarg.h>
 # include <stdio.h>
 
-int		ft_printf(char const *format, ...);
-void	ft_printc(char c);
-void	ft_prints(char *str);
+int	ft_printf(char const *format, ...);
+int	ft_printc(char c);
+int	ft_prints(char *str);
 
 #endif

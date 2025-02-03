@@ -6,7 +6,7 @@
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 17:26:24 by alicigar          #+#    #+#             */
-/*   Updated: 2025/02/03 00:52:42 by alicigar         ###   ########.fr       */
+/*   Updated: 2025/02/03 02:16:11 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ static int	ft_format(va_list *args, char format)
 		count += ft_print_c(va_arg(*args, int));
 	if (format == 's')
 		count += ft_print_s(va_arg(*args, char *));
+	if (format == 'd' || format == 'i')
+		count += ft_print_num(va_arg(*args, long long));
 	else if (format == '%')
 		count += ft_print_c('%');
 	return (count);

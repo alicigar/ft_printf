@@ -6,7 +6,7 @@
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 18:46:01 by alicigar          #+#    #+#             */
-/*   Updated: 2025/02/03 00:51:50 by alicigar         ###   ########.fr       */
+/*   Updated: 2025/02/03 01:11:57 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int	ft_print_c(char c)
 /*int main()
 {
     printf ("%c\n", 'C');
-	ft_printc('C');
+	ft_print_c('\0');
 	return (0);
 }*/

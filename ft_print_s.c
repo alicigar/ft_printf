@@ -6,7 +6,7 @@
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/29 18:40:10 by alicigar          #+#    #+#             */
-/*   Updated: 2025/02/03 00:51:44 by alicigar         ###   ########.fr       */
+/*   Updated: 2025/02/03 01:27:40 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_print_s(char *str)
 
 /*int	main()
 {
-    printf ("%s\n", " ");
-	ft_prints("");
+    printf ("%s\n", (char*)NULL);
+	ft_print_s(NULL);
 	return (0);
 }*/

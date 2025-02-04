@@ -18,7 +18,10 @@ int	ft_print_s(char *str)
 
 	count = 0;
 	if (!str)
-		return (write (1, "(null)", 6));
+	{
+		(write (1, "(null)", 6));
+		return (6);
+	}
 	while (*str)
 	{
 		write(1, str, 1);

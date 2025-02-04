@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_u.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/13 17:26:17 by alicigar          #+#    #+#             */
-/*   Updated: 2025/02/04 04:44:47 by alicigar         ###   ########.fr       */
+/*   Created: 2025/02/04 03:36:42 by alicigar          #+#    #+#             */
+/*   Updated: 2025/02/04 04:09:06 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include <unistd.h>
-# include <stdarg.h>
-# include <stdio.h>
+#include "ft_printf.h"
 
-int	ft_printf(char const *format, ...);
-int	ft_print_c(char c);
-int	ft_print_s(char *str);
-int	ft_print_dec(int n);
-int	ft_print_u(unsigned int n);
-int	ft_print_ptr(void *ptr);
-int	ft_print_hexa(unsigned int num);
-int	ft_print_hexacaps(unsigned int num);
+int	ft_print_u(unsigned int n)
+{
+	int	count;
 
-#endif
+	count = 0;
+	if (n >= 10)
+		count += ft_print_u(n / 10);
+	write (1, &"0123456789"[n % 10], 1);
+	count++;
+	return (count);
+}

@@ -6,7 +6,7 @@
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 17:26:17 by alicigar          #+#    #+#             */
-/*   Updated: 2025/02/04 22:09:05 by alicigar         ###   ########.fr       */
+/*   Updated: 2025/02/05 01:26:22 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <unistd.h>
 # include <stdarg.h>
 # include <stdio.h>
-# include <strings.h>
 
 int	ft_printf(char const *format, ...);
 int	ft_print_c(char c);

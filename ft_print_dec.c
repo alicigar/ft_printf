@@ -6,7 +6,7 @@
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 01:05:26 by alicigar          #+#    #+#             */
-/*   Updated: 2025/02/04 03:52:52 by alicigar         ###   ########.fr       */
+/*   Updated: 2025/02/05 01:01:15 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,13 @@ int	ft_print_dec(int n)
 	count++;
 	return (count);
 }
+
+/*int main()
+{
+	int num = 2147483647;
+
+	printf ("%d\n", num);
+	printf ("%i\n", num);
+	ft_print_dec (num);
+	return (0);
+}*/

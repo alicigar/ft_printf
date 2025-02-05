@@ -6,7 +6,7 @@
 /*   By: alicigar < alicigar@student.42malaga.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 21:39:54 by alicigar          #+#    #+#             */
-/*   Updated: 2025/02/04 22:04:34 by alicigar         ###   ########.fr       */
+/*   Updated: 2025/02/05 01:09:16 by alicigar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,15 @@ int	ft_print_hexa(unsigned int num)
 	count++;
 	return (count);
 }
+
+/*int	main()
+{
+	unsigned int num;
+
+	num = 4294967295;
+	
+	printf("%x\n", num);
+	ft_print_hexa(num);
+
+	return(0);
+}*/

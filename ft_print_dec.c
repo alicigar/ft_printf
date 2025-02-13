@@ -34,13 +34,3 @@ int	ft_print_dec(int n)
 	count++;
 	return (count);
 }
-
-/*int main()
-{
-	int num = 2147483647;
-
-	printf ("%d\n", num);
-	printf ("%i\n", num);
-	ft_print_dec (num);
-	return (0);
-}*/

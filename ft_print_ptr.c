@@ -40,10 +40,3 @@ int	ft_print_ptr(void *ptr)
 	count += ft_help(d);
 	return (count);
 }
-
-/*int main()
-{
-    printf ("%p\n", NULL);
-	ft_print_ptr('');
-	return (0);
-}*/

@@ -30,10 +30,3 @@ int	ft_print_s(char *str)
 	}
 	return (count);
 }
-
-/*int	main()
-{
-    printf ("%s\n", (char*)NULL);
-	ft_print_s(NULL);
-	return (0);
-}*/

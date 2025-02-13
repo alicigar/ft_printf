@@ -23,15 +23,3 @@ int	ft_print_hexa(unsigned int num)
 	count++;
 	return (count);
 }
-
-/*int	main()
-{
-	unsigned int num;
-
-	num = 4294967295;
-	
-	printf("%x\n", num);
-	ft_print_hexa(num);
-
-	return(0);
-}*/

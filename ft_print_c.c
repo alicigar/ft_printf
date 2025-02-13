@@ -17,10 +17,3 @@ int	ft_print_c(char c)
 	write (1, &c, 1);
 	return (1);
 }
-
-/*int main()
-{
-    printf ("%c\n", 'C');
-	ft_print_c('\0');
-	return (0);
-}*/
